@@ -28,6 +28,7 @@ img {
   border-style: dashed;
   border-color: hotpink;
   border-width: thick;
+  border-radius: 10px;
 }
 
 p {
