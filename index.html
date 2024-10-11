@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denzel Bakery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-brand">Denzel Bakery</div>
         <ul class="navbar-menu">
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#quotes">Customer Quotes</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -29,79 +31,31 @@
     </header>
 
     <main>
-        <section id="products" class="products">
-            <h2>Our Products</h2>
-            <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, 'croissants')">Croissants</button>
-                <button class="tab-button" onclick="openTab(event, 'breads')">Breads</button>
-                <button class="tab-button" onclick="openTab(event, 'cakes')">Cakes</button>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <h3>Almond Croissant</h3>
+                <img src="AlmondMain.png" alt="Almond Croissant">
+                <p>A delicate pastry filled with almond paste.</p>
+                <button class="detail-button">View More</button>
             </div>
-
-            <div id="croissants" class="tab-content active">
-                <div class="product-card">
-                    <h3>Almond Croissant</h3>
-                    <img src="AlmondMain.png" alt="Almond Croissant">
-                    <p>A delicate pastry filled with almond paste.</p>
-                    <button class="detail-button" data-modal="id01">Open Ingredients</button>
-                    <button class="detail-button" data-modal="id02">Open Instructions</button>
-                </div>
-                <!-- Add more croissant products here -->
+            <div class="product-card">
+                <h3>Sourdough Bread</h3>
+                <img src="Sourdough.png" alt="Sourdough Bread">
+                <p>A community favorite with a crusty exterior.</p>
+                <button class="detail-button">View More</button>
             </div>
-
-            <div id="breads" class="tab-content">
-                <div class="product-card">
-                    <h3>Sourdough Bread</h3>
-                    <img src="Sourdough.png" alt="Sourdough Bread">
-                    <p>A community favorite with a crusty exterior.</p>
-                    <button class="detail-button" data-modal="id03">Open Ingredients</button>
-                    <button class="detail-button" data-modal="id04">Open Instructions</button>
-                </div>
-                <!-- Add more bread products here -->
-            </div>
-
-            <div id="cakes" class="tab-content">
-                <div class="product-card">
-                    <h3>Classic Carrot Cake</h3>
-                    <img src="CarrotCakeMain.png" alt="Carrot Cake">
-                    <p>Enriched with carrots and walnuts, a family favorite.</p>
-                    <button class="detail-button" data-modal="id05">Open Ingredients</button>
-                    <button class="detail-button" data-modal="id06">Open Instructions</button>
-                </div>
-                <!-- Add more cake products here -->
+            <div class="product-card">
+                <h3>Classic Carrot Cake</h3>
+                <img src="CarrotCakeMain.png" alt="Carrot Cake">
+                <p>Enriched with carrots and walnuts, a family favorite.</p>
+                <button class="detail-button">View More</button>
             </div>
         </section>
-
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Denzel discovered his love for baking at the tender age of 10. His dream is to share the joy of baking with others and inspire them to create their own baked wonders.</p>
-        </section>
-
-        <section id="quotes" class="quotes">
-            <h2>Customer Quotes</h2>
-            <p>"Denzel's pastries are divine!" - Sarah J.</p>
-            <p>"The sourdough has the perfect flavor." - John D.</p>
-            <p>"Best carrot cake ever!" - Emily R.</p>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: contact@denzelbakery.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-
-        <!-- Modals -->
-        <div id="id01" class="modal"><div class="modal-content"><span class="close">&times;</span><ol><li>1 Sheet of puff pastry.</li><li>1/2 cup of almond paste.</li><li>1/4 cup of powdered sugar.</li><li>1 egg (for egg wash).</li></ol></div></div>
-        <div id="id02" class="modal"><div class="modal-content"><span class="close">&times;</span><p>Instructions for Almond Croissant...</p></div></div>
-        <div id="id03" class="modal"><div class="modal-content"><span class="close">&times;</span><ol><li>1 cup sourdough starter</li><li>1 1/2 cups warm water</li><li>4 cups bread flour</li><li>1 1/2 teaspoons salt</li></ol></div></div>
-        <div id="id04" class="modal"><div class="modal-content"><span class="close">&times;</span><p>Instructions for Sourdough Bread...</p></div></div>
-        <div id="id05" class="modal"><div class="modal-content"><span class="close">&times;</span><ol><li>2 cups all-purpose flour</li><li>2 cups sugar</li><li>4 eggs</li><li>2 cups grated carrots</li></ol></div></div>
-        <div id="id06" class="modal"><div class="modal-content"><span class="close">&times;</span><p>Instructions for Carrot Cake...</p></div></div>
     </main>
 
     <footer>
         <p>&copy; 2024 Denzel Bakery. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
