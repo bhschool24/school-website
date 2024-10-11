@@ -1,86 +1,26 @@
-body {
-    background: linear-gradient(135deg, #f8f0e3, #ffe0f0); /* Soft gradient background */
-    color: #4a3f36; /* Darker text color for contrast */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    animation: fadeIn 1s ease; /* Fade-in animation */
+nav {
+    background-color: #ff69b4;
+    padding: 10px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-h1, h3, h4, h5, h6 {
-    text-shadow: 2px 2px 10px rgba(255, 105, 180, 0.9); /* Strong glow effect */
-    color: #ff69b4; /* Pastel pink color */
-    transition: transform 0.3s; /* Hover effect */
+nav li {
+    margin: 0 15px;
 }
 
-h1:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-p {
-    text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.5); /* Subtle glow for paragraphs */
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-button {
-    background: linear-gradient(90deg, #ffb3d9, #ff69b4); /* Gradient button */
+nav a {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-button:hover {
-    background: linear-gradient(90deg, #ff69b4, #ffb3d9);
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 0 15px rgba(255, 105, 180, 1); /* Glow effect on hover */
-}
-
-hr {
-    border: 1px solid #ff69b4; /* Pastel pink hr line */
-    width: 80%;
-    margin: 20px auto;
-}
-
-img {
-    border: 5px solid #ffb3d9; /* Pastel border for images */
-    border-radius: 10px;
-    transition: transform 0.3s; /* Image hover effect */
-}
-
-img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Glow effect */
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-a {
-    color: #ff69b4; /* Pastel pink link color */
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-a:hover {
-    color: #4a3f36; /* Darker color on hover */
-}
-
-/* Modal Styles */
-.w3-modal-content {
-    background-color: #fff; /* White background for modal */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+.gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
 }
