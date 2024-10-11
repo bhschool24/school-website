@@ -1,26 +1,86 @@
-nav {
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f8f0e3, #ffe0f0);
+}
+
+header {
     background-color: #ff69b4;
-    padding: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
+    list-style: none;
 }
 
-nav li {
-    margin: 0 15px;
+nav ul li {
+    margin: 0 20px;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.gallery img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.cta-button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
     border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonials {
+    background: #ffe0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
