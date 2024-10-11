@@ -5,159 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Denzel Bakery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <center>
-        <!-- Title -->
-        <h1>Denzel Bakery</h1>
+    <header>
+        <div class="logo">Denzel Bakery</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to Denzel Bakery</h1>
+            <p>Experience the joy of freshly baked goods crafted with passion.</p>
+            <button class="cta-button">Order Now</button>
+        </section>
 
-        <!-- Description -->
-        <p>"Denzel discovered his love for baking at the tender age of 10 when he baked his first batch of chocolate chip cookies with his grandmother. The joy of creating something delicious from scratch enthralled him. Over the years, he honed his skills by experimenting with various recipes and even creating some of his own. His dream is to share the joy of baking with others and inspire them to create their own baked wonders."</p>
-        <hr>
+        <section class="products">
+            <h2>Our Specialties</h2>
+            <div class="product-grid">
+                <!-- Almond Croissant -->
+                <div class="product-card">
+                    <img src="AlmondMain.png" alt="Almond Croissant">
+                    <h3>Almond Croissant</h3>
+                    <p>A delicate pastry filled with sweet almond paste.</p>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">View Details</button>
+                </div>
 
-        <!-- Almond Croissant -->
-        <h3>Almond Croissant</h3>
-        <img src="AlmondMain.png" alt="Almond Preview" width="200" height="200">
-        <p>A delicate pastry filled with the sweet nutty goodness of almond paste, dusted with powdered sugar, and baked to a golden perfection.</p>
+                <!-- Sourdough Bread -->
+                <div class="product-card">
+                    <img src="Sourdough.png" alt="Sourdough Bread">
+                    <h3>Sourdough Bread</h3>
+                    <p>Classic sourdough with a crusty exterior.</p>
+                    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">View Details</button>
+                </div>
 
-        <div class="w3-container">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Ingredients</button>
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <ol>
-                            <li>1 Sheet of puff pastry.</li>
-                            <li>1/2 cup of almond paste.</li>
-                            <li>1/4 cup of powdered sugar.</li>
-                            <li>1 egg (for egg wash).</li>
-                        </ol>
-                    </div>
+                <!-- Classic Carrot Cake -->
+                <div class="product-card">
+                    <img src="CarrotCakeMain.png" alt="Carrot Cake">
+                    <h3>Classic Carrot Cake</h3>
+                    <p>Rich and moist, a family favorite.</p>
+                    <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">View Details</button>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        <section class="testimonials">
+            <h4>What Our Customers Say</h4>
+            <p>"Denzel's pastries are simply divine!" - Sarah J.</p>
+            <p>"The sourdough bread has the perfect crunch." - John D.</p>
+            <p>"Best carrot cake I've ever tasted!" - Emily R.</p>
+        </section>
+    </main>
 
-        <!-- Instructions for Almond Croissant -->
-        <div class="w3-container">
-            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button">Open Instructions</button>
-            <div id="id02" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <p>First, preheat the oven to 375°F. Next, roll out the puff pastry and cut it into triangles. Spread a thin layer of almond paste on each triangle.</p>
-                        <h5>Result:</h5>
-                        <img src="Almond1.png" alt="Almond step 1" width="200" height="200">
-                        <p>Then, roll each triangle from the base to the top and curve into a crescent shape. Finally, brush with egg wash and sprinkle with powdered sugar, and bake for 15-20 minutes until it's golden brown.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Sourdough Bread -->
-        <h3>Sourdough Bread</h3>
-        <img src="Sourdough.png" alt="Sourdough" width="200" height="200">
-        <p>A community favorite, boasting a crusty exterior and a soft, airy interior, embodying the classic sourdough charm.</p>
-
-        <div class="w3-container">
-            <button onclick="document.getElementById('id03').style.display='block'" class="w3-button">Open Ingredients</button>
-            <div id="id03" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <ol>
-                            <li>1 cup sourdough starter</li>
-                            <li>1 1/2 cups warm water</li>
-                            <li>4 cups bread flour</li>
-                            <li>1 1/2 teaspoons salt</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-container">
-            <button onclick="document.getElementById('id04').style.display='block'" class="w3-button">Open Instructions</button>
-            <div id="id04" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <p>First, mix the starter, water, and 3 cups of flour in a large bowl. This should create a sticky dough. Next, add salt, and remaining flour 1 tablespoon at a time until fully incorporated. Then, knead the dough on a floured surface for about 15 minutes.</p>
-                        <h5>Result:</h5>
-                        <img src="Sourdough1.png" alt="Sourdough step 1" width="200" height="200">
-                        <p>Once kneading is done, place the dough in a lightly greased bowl, cover it, and let it rise for about 5 hours. Finally, shape the dough into a loaf and let it rest for 30 minutes. Preheat your oven to 450°F and bake for about 30 minutes until golden brown.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Classic Carrot Cake -->
-        <h3>Classic Carrot Cake</h3>
-        <img src="CarrotCakeMain.png" alt="Carrot Cake" width="200" height="200">
-        <p>An homage to tradition and familial bonds, enriched with the natural sweetness of carrots and a crunch of walnuts. This cake holds a special place in Denzel's heart as it was his late grandfather's favorite.</p>
-
-        <div class="w3-container">
-            <button onclick="document.getElementById('id05').style.display='block'" class="w3-button">Open Ingredients</button>
-            <div id="id05" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <ol>
-                            <li>2 cups all-purpose flour</li>
-                            <li>2 cups granulated sugar</li>
-                            <li>1 teaspoon baking soda</li>
-                            <li>2 teaspoons cinnamon</li>
-                            <li>1/2 teaspoon salt</li>
-                            <li>1 cup vegetable oil</li>
-                            <li>4 large eggs</li>
-                            <li>2 cups grated carrots</li>
-                            <li>1 cup crushed pineapple</li>
-                            <li>1/2 cup chopped walnuts</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-container">
-            <button onclick="document.getElementById('id06').style.display='block'" class="w3-button">Open Instructions</button>
-            <div id="id06" class="w3-modal">
-                <div class="w3-modal-content">
-                    <div class="w3-container">
-                        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <p>First, preheat the oven to 350°F. In a large bowl, mix flour, sugar, baking soda, cinnamon, and salt. Stir in oil and eggs until smooth.</p>
-                        <h5>Result:</h5>
-                        <img src="CarrotCake1.jpg" alt="Carrot Cake step 1" width="200" height="200">
-                        <p>Fold in the carrots, pineapple, and walnuts, then pour the batter into a greased baking pan. Bake for 30-35 minutes.</p>
-                        <h5>Result:</h5>
-                        <img src="CarrotCake2.png" alt="Carrot Cake step 2" width="200" height="200">
-                        <p>Allow the cake to cool before frosting with cream cheese frosting.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Tips and Tricks -->
-        <h4>Tips<br>&amp;<br>Tricks</h4>
-        <ul>
-            <li>Measure ingredients accurately.</li>
-            <li>Allow eggs and butter to reach room temperature.</li>
-            <li>Rotate the baking tray halfway through the baking process for an even bake.</li>
-        </ul>
-
-        <hr>
-
-        <!-- Customer Quotes -->
-        <h4>Customer Quotes</h4>
-        <p>"Denzel's pastries are simply divine! I can't get enough of the almond croissants!" - Sarah J.</p>
-        <p>"The sourdough bread has the perfect crunch and flavor." - John D.</p>
-        <p>"Best carrot cake I've ever tasted, truly a masterpiece!" - Emily R.</p>
-    </center>
+    <footer>
+        <p>&copy; 2024 Denzel Bakery. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Modals for details -->
+    <!-- Include your existing modal code here -->
 </body>
 </html>
