@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Denzel Bakery</title>
+    <title>Denzel Bakery - Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-brand">Denzel Bakery</div>
-        <ul class="navbar-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <h1>Denzel Bakery</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main>
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="AlmondMain.png" alt="Almond Croissant">
-            <img src="Sourdough.png" alt="Sourdough Bread">
-            <img src="CarrotCakeMain.png" alt="Classic Carrot Cake">
+    <section id="gallery">
+        <h2 class="fade-in">Gallery</h2>
+        <div class="fade-in">
+            <img src="gallery1.jpg" alt="Bakery Image 1">
+            <img src="gallery2.jpg" alt="Bakery Image 2">
+            <img src="gallery3.jpg" alt="Bakery Image 3">
+            <!-- Add more images as necessary -->
         </div>
-    </main>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Denzel Bakery. All rights reserved.</p>
+        <p>&copy; 2024 Denzel Bakery | <a href="contact.html">Contact Us</a></p>
     </footer>
 </body>
 </html>

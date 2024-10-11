@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denzel Bakery - Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Denzel Bakery</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2 class="fade-in">Our Products</h2>
+        <div class="product fade-in">
+            <h3>Almond Croissant</h3>
+            <img src="AlmondMain.png" alt="Almond Croissant">
+            <p>A delicate pastry filled with almond paste.</p>
+            <button class="w3-button w3-black" onclick="toggleModal('almondModal')">View Recipe</button>
+            <div id="almondModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleModal('almondModal')">&times;</span>
+                    <h4>Ingredients</h4>
+                    <ol>
+                        <li>1 Sheet of puff pastry</li>
+                        <li>1/2 cup almond paste</li>
+                        <li>1/4 cup powdered sugar</li>
+                        <li>1 egg (for egg wash)</li>
+                    </ol>
+                    <h4>Instructions</h4>
+                    <p>Preheat the oven, roll out the pastry, fill, shape, and bake!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more products here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Denzel Bakery | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

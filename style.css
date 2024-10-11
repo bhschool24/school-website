@@ -1,13 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -18,145 +14,123 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
-    background: rgba(44, 62, 80, 0.9);
-    padding: 1rem;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
+.navbar h1 {
+    color: #333;
 }
 
-.navbar-menu {
+.navbar ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
-.navbar-menu li {
-    margin-left: 2rem;
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.navbar-menu a {
-    color: white;
+.navbar a {
     text-decoration: none;
+    color: #333;
     transition: color 0.3s;
 }
 
-.navbar-menu a:hover {
-    color: #ff6347;
+.navbar a:hover {
+    color: #ff6b6b;
 }
 
 .hero {
-    background: url('bakery-banner.jpg') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: relative;
     text-align: center;
+    padding: 100px 20px;
+    color: #fff;
 }
 
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    border-radius: 10px;
-}
-
-.typewriter p {
-    display: inline;
-    overflow: hidden;
-    border-right: 0.15em solid #ff6347;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0.15em;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #ff6347; }
-}
-
-.cta-button {
-    background: #ff6347;
-    color: white;
+.hero .button {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 15px 25px;
     border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
-    text-decoration: none;
-}
-
-.cta-button:hover {
-    background: #ff4537;
-    transform: translateY(-2px);
-}
-
-.featured-products {
-    padding: 2rem;
-    text-align: center;
-}
-
-.product-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-.product-card img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.product-card img:hover {
-    transform: scale(1.05);
-}
-
-.detail-button {
-    display: inline-block;
-    background: #ff6347;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
-.detail-button:hover {
-    background: #ff4537;
+.hero .button:hover {
+    background: #ff9a9e;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background: rgba(44, 62, 80, 0.9);
-    color: white;
-    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
 }
