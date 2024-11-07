@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denzel Bakery - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Sent.lol - Anonymous File Hosting</title>
+  <style>
+        body {
+            background-color: #2e2e2e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #e0e0e0;
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #bbbbbb;
+            margin-top: 5px;
+        }
+
+        .upload-box {
+            width: 90%;
+            max-width: 500px;
+            height: 200px;
+            background-color: #444;
+            border: 2px dashed #7e287f;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            color: #bbbbbb;
+            font-size: 1.2em;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .upload-box:hover {
+            background-color: #555;
+        }
+
+        .file-link {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #5d1e64;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .file-link:hover {
+            background-color: #7e287f;
+        }
+  </style>
+  <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Link copied to clipboard!");
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+  </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <h1>Denzel Bakery</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero fade-in">
-        <h2>Welcome to Denzel Bakery</h2>
-        <p>Where every bite is a piece of art!</p>
-        <a href="products.html" class="button">Explore Our Products</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Denzel Bakery | <a href="contact.html">Contact Us</a></p>
-    </footer>
+  <h1>Sent.lol</h1>
+  <h2>The best anonymous file hosting!</h2>
+  <div class="upload-box" onclick=
+  "document.getElementById('fileInput').click()">
+    Drop files here! (300 MB limit)
+  </div>
+  <form id="uploadForm" action="" method="post" enctype=
+  "multipart/form-data" style="display:none;" name="uploadForm">
+    <input type="file" id="fileInput" name="file" onchange=
+    "document.getElementById('uploadForm').submit()">
+  </form>
 </body>
 </html>
